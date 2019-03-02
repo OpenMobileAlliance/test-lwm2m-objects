@@ -4,13 +4,13 @@
 FILE INFORMATION
 
 OMA Permanent Document
-   File: OMA-SUP-XML_LWM2M_Device-V1_0_2-20180612-A
+   File: OMA-SUP-XML_LWM2M_Device-V1_0_3-20180710-A
    Type: xml
-   Date: 2018-Jun-12
+   Date: 2018-07-10
 
 Public Reachable Information
    Path: http://www.openmobilealliance.org/tech/profiles
-   Name: LWM2M_Device-v1_0_2.xml
+   Name: LWM2M_Device-v1_0_3.xml
 
 NORMATIVE INFORMATION
 
@@ -256,7 +256,7 @@ The LwM2M Server is able to write this Resource to make the LwM2M Client synchro
         <Type>String</Type>
         <RangeEnumeration></RangeEnumeration>
         <Units></Units>
-        <Description><![CDATA[Indicates which bindings and modes are supported in the LwM2M Client. The possible values of Resource are combination of "U" or "UQ" and "S" or "SQ".]]></Description>
+        <Description><![CDATA[Indicates which bindings and modes are supported in the LwM2M Client. The possible values are those listed in the LwM2M Core Specification.]]></Description>
      </Item>    
 			<Item ID="17"><Name>Device Type</Name>
 				<Operations>R</Operations>

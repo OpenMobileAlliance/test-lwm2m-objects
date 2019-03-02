@@ -1,16 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 
 <!--
 FILE INFORMATION
 
 OMA Permanent Document
-   File: OMA-SUP-XML_LWM2M_Server-V1_1_1-YYYYMMDD-D
+   File: OMA-SUP-XML_LWM2M_Server-V2_0-YYYYMMDD-D
    Type: xml
    Date: YYYY-MM-DD
 
 Public Reachable Information
    Path: http://www.openmobilealliance.org/tech/profiles
-   Name: LWM2M_Server-v1_1_1.xml
+   Name: LWM2M_Server-v2_0.xml
 
 NORMATIVE INFORMATION
 
@@ -62,8 +62,8 @@ LEGAL DISCLAIMER
 		<Name>LwM2M Server</Name>
 		<Description1><![CDATA[This LwM2M Objects provides the data related to a LwM2M Server. A Bootstrap-Server has no such an Object Instance associated to it.]]></Description1>
 		<ObjectID>1</ObjectID>
-		<ObjectURN>urn:oma:lwm2m:oma:1:1.1</ObjectURN><LWM2MVersion>1.1</LWM2MVersion>
-		<ObjectVersion>1.1</ObjectVersion><MultipleInstances>Multiple</MultipleInstances>
+	  <ObjectURN>urn:oma:lwm2m:oma:1:2.0</ObjectURN><LWM2MVersion>1.1</LWM2MVersion>
+		<ObjectVersion>2.0</ObjectVersion><MultipleInstances>Multiple</MultipleInstances>
 		<Mandatory>Mandatory</Mandatory>
 		<Resources>
 			<Item ID="0">
@@ -175,12 +175,12 @@ If the LwM2M Client supports the binding specified in this Resource, the LwM2M C
 			<Item ID="10">
 				<Name>APN Link</Name>
         <Operations>RW</Operations>
-				<MultipleInstances>Single</MultipleInstances>
+				<MultipleInstances>Multiple</MultipleInstances>
 				<Mandatory>Optional</Mandatory>
 				<Type>Objlnk</Type>
 				<RangeEnumeration></RangeEnumeration>
 				<Units></Units>
-				<Description><![CDATA[If this resource is defined, it provides a link to the APN connection profile Object Instance (OMNA registered Object ID:11) to be used to communicate with this server.]]></Description>
+				<Description><![CDATA[Each instance of this resource provides a link to an APN connection profile Object Instance (OMNA registered Object ID:11) that can be used to communicate with this server.]]></Description>
 			</Item>
 			<Item ID="11">
 				<Name>TLS-DTLS Alert Code</Name>	 			
@@ -311,6 +311,15 @@ If the LwM2M Client supports the binding specified in this Resource, the LwM2M C
 				<Units></Units>
 				<Description><![CDATA[If true or the Resource is not present, the LwM2M Client Send command capability is de-activated. 
 If false, the LwM2M Client Send Command capability is activated.]]></Description>
+			</Item>
+			<Item ID="24"><Name>Supported Enabler Version</Name>
+				<Operations>RW</Operations>
+				<MultipleInstances>Multiple</MultipleInstances>
+				<Mandatory>Optional</Mandatory>
+				<Type>String</Type>
+				<RangeEnumeration></RangeEnumeration>
+				<Units></Units>
+				<Description><![CDATA[This represents the supported LwM2M client versions at the server.]]></Description>
 			</Item>
 		</Resources>
 		<Description2></Description2>
