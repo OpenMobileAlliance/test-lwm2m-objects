@@ -4,18 +4,18 @@
 FILE INFORMATION
 
 OMA Permanent Document
-   File: OMA-SUP-XML_LWM2M_Firmware_Update-V1_0-20170208-A
+   File: OMA-SUP-XML_LWM2M_Firmware_Update-V1_0_1-20170704-A
    Type: xml
 
 Public Reachable Information
    Path: http://www.openmobilealliance.org/tech/profiles
-   Name: LWM2M_Firmware_Update-v1_0.xml
+   Name: LWM2M_Firmware_Update-v1_0_1.xml
 
 NORMATIVE INFORMATION
 
   Information about this file can be found in the latest revision of
 
-    OMA-TS-LightweightM2M-V1_0
+    OMA-TS-LightweightM2M-V1_0_1
 
   This is available at http://www.openmobilealliance.org/
 
@@ -24,6 +24,7 @@ NORMATIVE INFORMATION
 CHANGE HISTORY
 
 08022017 Status changed to Approved by TP, TP Ref # OMA-TP-2017-0009-INP_LightweightM2M-V1_0_ERP_for_Final_Approval
+04072017 Status changed to Approved by TP, TP Ref # OMA-TP-2017-0029R01-INP_LightweightM2M_V1.0.1_ERP_for_Final_Approval_Notification
 	
 LEGAL DISCLAIMER
 
@@ -119,7 +120,7 @@ This Resource is only executable when the value of the State Resource is Downloa
 2: Downloaded
 3: Updating
 If writing the firmware package to Package Resource is done, or, if the device has downloaded the firmware package from the Package URI the state changes to Downloaded.
-Writing an empty string to Package Resource or to Package URI Resource, resets the Firmware Update State Machine: the State Resource value is set to Idle and the Update Result Resource value is set to 0.
+Writing an empty string to Package URI Resource or setting the Package Resource to NULL (‘\0’), resets the Firmware Update State Machine: the State Resource value is set to Idle and the Update Result Resource value is set to 0.
 When in Downloaded state, and the executable Resource Update is triggered, the state changes to Updating.
 If the Update Resource failed, the state returns at Downloaded.
 If performing the Update Resource was successful, the state changes from Updating to Idle. 
@@ -143,7 +144,7 @@ Firmware Update mechanisms are illustrated below in Figure 29 of the LwM2M versi
 6: Unsupported package type.
 7: Invalid URI
 8: Firmware update failed
-9: Unsupported protocol. A LwM2M client indicates the failure to retrieve the firmware imagine using the URI provided in the Package URI resource by writing the value 9 to the /5/0/5 (Update Result resource) when the URI contained a URI scheme unsupported by the client. Consequently, the LwM2M Client is unable to retrieve the firmware image using the URI provided by the LwM2M Server in the Package URI when it refers to an unsupported protocol.]]></Description>
+9: Unsupported protocol. A LwM2M client indicates the failure to retrieve the firmware image using the URI provided in the Package URI resource by writing the value 9 to the /5/0/5 (Update Result resource) when the URI contained a URI scheme unsupported by the client. Consequently, the LwM2M Client is unable to retrieve the firmware image using the URI provided by the LwM2M Server in the Package URI when it refers to an unsupported protocol.]]></Description>
 			</Item>
 			<Item ID="6">
 				<Name>PkgName</Name>

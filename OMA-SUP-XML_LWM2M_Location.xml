@@ -1,33 +1,31 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 
 <!--
 FILE INFORMATION
 
 OMA Permanent Document
-   File: OMA-SUP-XML_LWM2M_Location-V1_0-20170208-A
+   File: OMA-SUP-XML_LWM2M_Location-V1_0_1-20180612-A
    Type: xml
+   Date: 2018-Jun-2018
 
 Public Reachable Information
    Path: http://www.openmobilealliance.org/tech/profiles
-   Name: LWM2M_Location-v1_0.xml
+   Name: LWM2M_Location-v1_0_1.xml
 
 NORMATIVE INFORMATION
 
   Information about this file can be found in the latest revision of
 
-    OMA-TS-LightweightM2M-V1_0
+    OMA-TS-LightweightM2M-V1_0_2
+    OMA-TS-LightweightM2M_Core-V1_1
 
   This is available at http://www.openmobilealliance.org/
 
-  Send comments to technical-comments@mail.openmobilealliance.org
-
-CHANGE HISTORY
-
-08022017 Status changed to Approved by TP, TP Ref # OMA-TP-2017-0009-INP_LightweightM2M-V1_0_ERP_for_Final_Approval
+  Send comments to https://github.com/OpenMobileAlliance/OMA_LwM2M_for_Developers/issues
 
 LEGAL DISCLAIMER
 
-  Copyright 2017 Open Mobile Alliance All rights reserved.
+  Copyright 2018 Open Mobile Alliance All rights reserved.
 
   Redistribution and use in source and binary forms, with or without
   modification, are permitted provided that the following conditions
@@ -60,7 +58,7 @@ LEGAL DISCLAIMER
   http://www.openmobilealliance.org/ipr.html
 -->
 
-<LWM2M xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://openmobilealliance.org/tech/profiles/LWM2M.xsd">
+<LWM2M xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.openmobilealliance.org/tech/profiles/LWM2M.xsd">
   <Object ObjectType="MODefinition">
 		<Name>Location</Name>
 		<Description1><![CDATA[This LwM2M Objects provide a range of device related information which can be queried by the LwM2M Server, and a device reboot and factory reset function.]]></Description1>
@@ -77,7 +75,7 @@ LEGAL DISCLAIMER
 				<Type>Float</Type>
 				<RangeEnumeration></RangeEnumeration>
 				<Units>Deg</Units>
-				<Description><![CDATA[The decimal notation of latitude, e.g., -43.5723 [World Geodetic System 1984].]]></Description>
+				<Description><![CDATA[The decimal notation of latitude, e.g. -43.5723 [World Geodetic System 1984].]]></Description>
 			</Item>
 			<Item ID="1">
 				<Name>Longitude</Name>
@@ -87,7 +85,7 @@ LEGAL DISCLAIMER
 				<Type>Float</Type>
 				<RangeEnumeration></RangeEnumeration>
 				<Units>Deg</Units>
-				<Description><![CDATA[The decimal notation of longitude, e.g., 153.21760 [World Geodetic System 1984].]]></Description>
+				<Description><![CDATA[The decimal notation of longitude, e.g. 153.21760 [World Geodetic System 1984].]]></Description>
 			</Item>
 			<Item ID="2">
 				<Name>Altitude</Name>

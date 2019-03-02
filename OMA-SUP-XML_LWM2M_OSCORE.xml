@@ -4,13 +4,13 @@
 FILE INFORMATION
 
 OMA Permanent Document
-   File: OMA-SUP-XML_LWM2M_OSCORE-V1_0-YYYYMMDD-D
+   File: OMA-SUP-XML_LWM2M_OSCORE-V1_0_1-YYYYMMDD-D
    Type: xml
    Date: YYYY-MM-DD
 
 Public Reachable Information
    Path: http://www.openmobilealliance.org/tech/profiles
-   Name: LWM2M_OSCORE-v1_0.xml
+   Name: LWM2M_OSCORE-v1_0_1.xml
 
 NORMATIVE INFORMATION
 
@@ -93,7 +93,7 @@ Instances of this Object are linked from Instances of Object 0 using the OSCORE 
 				<Type>String</Type>
 				<RangeEnumeration></RangeEnumeration>
 				<Units></Units>
-				<Description><![CDATA[This resource MUST store an OSCORE identifier for the LwM2M Client called the Recepient ID. ]]></Description>
+				<Description><![CDATA[This resource MUST store an OSCORE identifier for the LwM2M Client called the Recipient ID. ]]></Description>
 			</Item>
 			<Item ID="3"><Name>OSCORE AEAD Algorithm </Name>
 				<Operations></Operations>

@@ -4,18 +4,18 @@
 FILE INFORMATION
 
 OMA Permanent Document
-   File: OMA-SUP-XML_LWM2M_Connectivity_Monitoring-V1_0-20170208-A
+   File: OMA-SUP-XML_LWM2M_Connectivity_Monitoring-V1_0_1-20170704-A
    Type: xml
 
 Public Reachable Information
    Path: http://www.openmobilealliance.org/tech/profiles
-   Name: LWM2M_Connectivity_Monitoring-v1_0.xml
+   Name: LWM2M_Connectivity_Monitoring-v1_0_1.xml
 
 NORMATIVE INFORMATION
 
   Information about this file can be found in the latest revision of
 
-    OMA-TS-LightweightM2M-V1_0
+    OMA-TS-LightweightM2M-V1_0_1
 
   This is available at http://www.openmobilealliance.org/
 
@@ -24,6 +24,7 @@ NORMATIVE INFORMATION
 CHANGE HISTORY
 
 08022017 Status changed to Approved by TP, TP Ref # OMA-TP-2017-0009-INP_LightweightM2M-V1_0_ERP_for_Final_Approval
+04072017 Status changed to Approved by TP, TP Ref # OMA-TP-2017-0029R01-INP_LightweightM2M_V1.0.1_ERP_for_Final_Approval_Notification
 
 LEGAL DISCLAIMER
 
@@ -88,7 +89,8 @@ The goal of the Connectivity Monitoring Object is to carry information reflectin
 4: WiMAX cellular network
 5: LTE-TDD cellular network
 6: LTE-FDD cellular network
-7~20: Reserved for other type cellular network
+7: NB-IoT
+8~20: Reserved for other type cellular network
 21~40 are Wireless Bearers
 21: WLAN network
 22: Bluetooth network
@@ -121,7 +123,12 @@ The goal of the Connectivity Monitoring Object is to carry information reflectin
 				<Description><![CDATA[This node contains the average value of the
 received signal strength indication used in the
 current network bearer (as indicated by
-Resource 0 of this Object). For more details
+Resource 0 of this Object). For the following network bearers the signal strength parameters indicated below are represented by this resource:
+GSM:    RSSI
+UMTS:  RSCP
+LTE:      RSRP
+NB-IoT: NRSRP
+For more details
 on Network Measurement Report, refer to the
 appropriate Cellular or Wireless Network
 standards. (e.g., for LTE Cellular Network
@@ -135,8 +142,7 @@ refer to ETSI TS 36.133 specification).]]></Description>
 				<Type>Integer</Type>
 				<RangeEnumeration></RangeEnumeration>
 				<Units></Units>
-				<Description><![CDATA[This contains received link quality  e.g., LQI for IEEE 802.15.4, (Range (0..255)), RxQual Downlink (for GSM range is 0…7).
-Refer to [3GPP 44.018] for more details on Network Measurement Report encoding.]]></Description>
+				<Description><![CDATA[This contains received link quality  e.g. LQI for IEEE 802.15.4 (range 0..255), RxQual Downlink for GSM (range 0…7, refer to [3GPP 44.018] for more details on Network Measurement Report encoding), RSRQ for LTE, (refer to [3GPP 36.214]), NRSRQ for NB-IoT (refer to [3GPP 36.214]).]]></Description>
 			</Item>
 			<Item ID="4">
 				<Name>IP Addresses</Name>

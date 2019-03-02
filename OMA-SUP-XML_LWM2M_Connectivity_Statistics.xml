@@ -1,21 +1,21 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <!--
 FILE INFORMATION
 
 OMA Permanent Document
-   File: OMA-SUP-XML_LWM2M_Connectivity_Statistics-V1_0-20170208-A
+   File: OMA-SUP-XML_LWM2M_Connectivity_Statistics-V1_0_1-20170704-A
    Type: xml
 
 Public Reachable Information
    Path: http://www.openmobilealliance.org/tech/profiles
-   Name: LWM2M_Connectivity_Statistics-v1_0.xml
+   Name: LWM2M_Connectivity_Statistics-v1_0_1.xml
 
 NORMATIVE INFORMATION
 
   Information about this file can be found in the latest revision of
 
-    OMA-TS-LightweightM2M-V1_0
+    OMA-TS-LightweightM2M-V1_0_1
 
   This is available at http://www.openmobilealliance.org/
 
@@ -24,6 +24,7 @@ NORMATIVE INFORMATION
 CHANGE HISTORY
 
 08022017 Status changed to Approved by TP, TP Ref # OMA-TP-2017-0009-INP_LightweightM2M-V1_0_ERP_for_Final_Approval
+04072017 Status changed to Approved by TP, TP Ref # OMA-TP-2017-0029R01-INP_LightweightM2M_V1.0.1_ERP_for_Final_Approval_Notification
 	
 LEGAL DISCLAIMER
 
@@ -97,7 +98,7 @@ LEGAL DISCLAIMER
 				<Type>Integer</Type>
 				<RangeEnumeration></RangeEnumeration>
 				<Units>Kilo-Bytes</Units>
-				<Description><![CDATA[Indicate the total amount of data transmitted during the collection period.]]></Description>
+				<Description><![CDATA[Indicate the total amount of IP data transmitted during the collection period.]]></Description>
 			</Item>
 			<Item ID="3">
 				<Name>Rx Data</Name>
@@ -107,7 +108,7 @@ LEGAL DISCLAIMER
 				<Type>Integer</Type>
 				<RangeEnumeration></RangeEnumeration>
 				<Units>Kilo-Bytes</Units>
-				<Description><![CDATA[Indicate the total amount of data received during the collection period.]]></Description>
+				<Description><![CDATA[Indicate the total amount of IP data received during the collection period.]]></Description>
 			</Item>
 			<Item ID="4">
 				<Name>Max Message Size</Name>
@@ -117,7 +118,7 @@ LEGAL DISCLAIMER
 				<Type>Integer</Type>
 				<RangeEnumeration></RangeEnumeration>
 				<Units>Byte</Units>
-				<Description><![CDATA[The maximum message size that is used during the collection period.]]></Description>
+				<Description><![CDATA[The maximum IP message size that is used during the collection period.]]></Description>
 			</Item>
 			<Item ID="5">
 				<Name>Average Message Size</Name>
@@ -127,7 +128,7 @@ LEGAL DISCLAIMER
 				<Type>Integer</Type>
 				<RangeEnumeration></RangeEnumeration>
 				<Units>Byte</Units>
-				<Description><![CDATA[The average message size that is used during the collection period.]]></Description>
+				<Description><![CDATA[The average IP message size that is used during the collection period.]]></Description>
 			</Item>
       <Item ID="6">
         <Name>Start</Name>
@@ -137,7 +138,8 @@ LEGAL DISCLAIMER
         <Type></Type>
         <RangeEnumeration></RangeEnumeration>
         <Units></Units>
-        <Description><![CDATA[Reset resources 0-5 to 0 and start to collect information, If resource 8 (Collection Period) value is 0, the client will keep collecting information until resource 7 (Stop) is executed, otherwise the client will stop collecting information after specified period ended.]]></Description>
+        <Description><![CDATA[Reset resources 0-5 to 0 and start to collect information, If resource 8 (Collection Period) value is 0, the client will keep collecting information until resource 7 (Stop) is executed, otherwise the client will stop collecting information after specified period ended.
+        Note:When reporting the Tx Data or Rx Data, the LwM2M Client reports the total KB transmitted/received over IP bearer(s), including all protocol header bytes up to and including the IP header. This does not include lower level retransmissions/optimizations (e.g. RAN, header compression) or SMS messages.]]></Description>
       </Item>   
 			<Item ID="7"><Name>Stop</Name>
 				<Operations>E</Operations>
@@ -157,6 +159,6 @@ LEGAL DISCLAIMER
 				<Units>Seconds</Units>
 				<Description><![CDATA[The default collection period in seconds. The value 0 indicates that the collection period is not set.]]></Description>
 			</Item></Resources>
-		<Description2><![CDATA[]]></Description2>
+		<Description2><![CDATA[Note: When reporting the Tx Data or Rx Data, the LwM2M Client reports the total KB transmitted/received over IP bearer(s), including all protocol header bytes up to and including the IP header. This does not include lower level retransmissions/optimizations (e.g. RAN, header compression) or SMS messages.]]></Description2>
 	</Object>
 </LWM2M>
