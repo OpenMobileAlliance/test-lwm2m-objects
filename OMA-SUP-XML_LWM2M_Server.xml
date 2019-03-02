@@ -1,16 +1,16 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <!--
 FILE INFORMATION
 
 OMA Permanent Document
-   File: OMA-SUP-XML_LWM2M_Server-V1_1-YYYYMMDD-D
+   File: OMA-SUP-XML_LWM2M_Server-V1_1_1-YYYYMMDD-D
    Type: xml
    Date: YYYY-MM-DD
 
 Public Reachable Information
    Path: http://www.openmobilealliance.org/tech/profiles
-   Name: LWM2M_Server-v1_1.xml
+   Name: LWM2M_Server-v1_1_1.xml
 
 NORMATIVE INFORMATION
 
@@ -84,7 +84,7 @@ LEGAL DISCLAIMER
 				<Type>Integer</Type>
 				<RangeEnumeration></RangeEnumeration>
 				<Units>s</Units>
-				<Description><![CDATA[Specify the lifetime of the registration in seconds (see Section 5.3 Registration).]]></Description>
+				<Description><![CDATA[Specify the lifetime of the registration in seconds (see Client Registration Interface).]]></Description>
 			</Item>
 			<Item ID="2">
 				<Name>Default Minimum Period</Name>
@@ -290,7 +290,7 @@ If the LwM2M Client supports the binding specified in this Resource, the LwM2M C
 				<Type>Boolean</Type>
 				<RangeEnumeration></RangeEnumeration>
 				<Units></Units>
-				<Description><![CDATA[If true, the LwM2M Server expects that the LwM2M Client is reachable over SMS binding at any time. SMS Triggers do not expect a message back over SMS. Trigger Mode is independent of the other bindings and it can be used with one or more transports. The default value (resource not present) is false.]]></Description>
+				<Description><![CDATA[Using the Trigger Resource a LwM2M Client can indicate whether it is reachable over SMS (value set to 'true') or not (value set to 'false'). The default value (resource not present) is 'false'. When set to 'true' the LwM2M Server MAY, for example, request the LwM2M Client to perform operations, such as the "Update" operation by sending an "Execute" operation on "Registration Update Trigger" Resource via SMS. No SMS response is expected for such a message.]]></Description>
 			</Item>
 			<Item ID="22">
 				<Name>Preferred Transport</Name>

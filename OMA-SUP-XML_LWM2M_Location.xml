@@ -1,16 +1,16 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <!--
 FILE INFORMATION
 
 OMA Permanent Document
-   File: OMA-SUP-XML_LWM2M_Location-V1_0_1-20180612-A
+   File: OMA-SUP-XML_LWM2M_Location-V1_0_2-YYYYMMDD-D
    Type: xml
-   Date: 2018-Jun-2018
+   Date: DD-MMM-YYYY
 
 Public Reachable Information
    Path: http://www.openmobilealliance.org/tech/profiles
-   Name: LWM2M_Location-v1_0_1.xml
+   Name: LWM2M_Location-v1_0_2.xml
 
 NORMATIVE INFORMATION
 
@@ -61,7 +61,7 @@ LEGAL DISCLAIMER
 <LWM2M xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.openmobilealliance.org/tech/profiles/LWM2M.xsd">
   <Object ObjectType="MODefinition">
 		<Name>Location</Name>
-		<Description1><![CDATA[This LwM2M Objects provide a range of device related information which can be queried by the LwM2M Server, and a device reboot and factory reset function.]]></Description1>
+		<Description1><![CDATA[This LwM2M Object provides a range of location telemetry related information which can be queried by the LwM2M Server.]]></Description1>
 		<ObjectID>6</ObjectID>
 		<ObjectURN>urn:oma:lwm2m:oma:6</ObjectURN>
 		<MultipleInstances>Single</MultipleInstances>
@@ -105,7 +105,7 @@ LEGAL DISCLAIMER
 				<Type>Float</Type>
 				<RangeEnumeration></RangeEnumeration>
 				<Units>m</Units>
-				<Description><![CDATA[The value in the Radius Resource indicates the size in meters of a circular area around a point of geometry.]]></Description>
+				<Description><![CDATA[The value in this resource indicates the radius of a circular area in meters. The circular area is used to describe uncertainty about a point for coordinates in a two-dimensional coordinate reference systems (CRS). The center point of a circular area is specified by using the Latitude and the Longitude Resources.]]></Description>
 			</Item>
 			<Item ID="4">
 				<Name>Velocity</Name>
@@ -115,7 +115,7 @@ LEGAL DISCLAIMER
 				<Type>Opaque</Type>
 				<RangeEnumeration></RangeEnumeration>
 				<Units></Units>
-				<Description><![CDATA[The velocity in the LwM2M Client is defined in [3GPP-TS_23.032].]]></Description>
+				<Description><![CDATA[The velocity of the LwM2M Client, as defined in [3GPP-TS_23.032].]]></Description>
 			</Item>
 			<Item ID="5">
 				<Name>Timestamp</Name>
