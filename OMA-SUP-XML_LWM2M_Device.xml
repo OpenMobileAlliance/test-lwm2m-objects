@@ -1,16 +1,16 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <!--
 FILE INFORMATION
 
 OMA Permanent Document
-   File: OMA-SUP-XML_LWM2M_Device-V1_0_3-20180710-A
+   File: OMA-SUP-XML_LWM2M_Device-V1_1-YYYYMMDD-D
    Type: xml
-   Date: 2018-07-10
+   Date: YYYY-MM-DD
 
 Public Reachable Information
    Path: http://www.openmobilealliance.org/tech/profiles
-   Name: LWM2M_Device-v1_0_3.xml
+   Name: LWM2M_Device-v1_1.xml
 
 NORMATIVE INFORMATION
 
@@ -63,7 +63,9 @@ LEGAL DISCLAIMER
 		<Name>Device</Name>
 		<Description1><![CDATA[This LwM2M Object provides a range of device related information which can be queried by the LwM2M Server, and a device reboot and factory reset function.]]></Description1>
 		<ObjectID>3</ObjectID>
-		<ObjectURN>urn:oma:lwm2m:oma:3</ObjectURN>
+		<ObjectURN>urn:oma:lwm2m:oma:3:1.1</ObjectURN>
+		<LWM2MVersion>1.0</LWM2MVersion>
+		<ObjectVersion>1.1</ObjectVersion>
 		<MultipleInstances>Single</MultipleInstances>
 		<Mandatory>Mandatory</Mandatory>
 		<Resources>
@@ -139,6 +141,7 @@ When this Resource is executed, “De-register” operation MAY be sent to the L
 				<Description><![CDATA[0 – DC power
 1 – Internal Battery
 2 – External Battery
+3 - Fuel Cell
 4 – Power over Ethernet
 5 – USB
 6 – AC (Mains) power
@@ -310,8 +313,8 @@ Status	Meaning	Description
 				<Mandatory>Optional</Mandatory>
 				<Type>Integer</Type>
 				<RangeEnumeration></RangeEnumeration>
-				<Units></Units>
-				<Description><![CDATA[Total amount of storage space which can store data and software in the LwM2M Device (expressed in kilobytes).]]></Description>
+				<Units>kB</Units>
+				<Description><![CDATA[Total amount of storage space which can store data and software in the LwM2M Device.]]></Description>
 			</Item>
 			<Item ID="22"><Name>ExtDevInfo</Name>
 				<Operations>R</Operations>

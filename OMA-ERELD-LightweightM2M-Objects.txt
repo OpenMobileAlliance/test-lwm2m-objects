@@ -1,0 +1,264 @@
+LIGHTWEIGHTM2M SECURITY OBJECT (0)
+
+RELEASE VERSION OVERVIEW
+  Version 1.0 Functionality
+  Version 1.1 Functionality
+   * Metadata updates
+   * New resources IDs: 13; 14; 15; 16 and 17
+
+DOCUMENT LISTING FOR SUP LightweightM2M Security Object V1.1
+Publication Considerations
+  Doc Reference   
+   * [LWM2M_Security_XML]	
+  Permanent Document Reference:
+   * OMA-SUP-XML_LWM2M_Security-V1_1-20180710-A	
+  Description: 
+   * XML document for LightweightM2M Security Working file in LWM2M_XML directory:
+        * File: LWM2M_Security-v1_1.xml
+        * Path: http://www.openmobilealliance.org/tech/profiles
+
+OMNA Considerations
+The OMNA registry needs to add and maintain the following Objects:
+  * Object URN Identifier: urn:oma:lwm2m:oma:0:1.1
+  * Object Name: LwM2M Security
+  * Object Specification URL: OMA-TS-LightweightM2M-Core-V1-1-20180710-A
+  * Description: It provides the keying material of a LwM2M Client appropriate to access a specified LwM2M Server. One Object   
+                 Instance SHOULD address a LwM2M Bootstrap Server. These LwM2M Object Resources MUST only be changed by a LwM2M 
+                 Bootstrap Server or Bootstrap from Smartcard and MUST NOT be accessible by any other LwM2M Server.
+
+-------------------------
+
+LIGHTWEIGHTM2M SERVER OBJECT (1)
+
+RELEASE VERSION OVERVIEW
+  Version 1.0 Functionality
+  Version 1.1 Functionality
+   * Updates to the metadata information
+   * New Resources ID: 9; 10; 11; 12; 13; 14; 15; 16; 17; 18; 19; 20; 21 and 22.
+
+DOCUMENT LISTING FOR SUP LightweightM2M Server Object V1.1
+Publication Considerations
+  Doc Reference   
+   * [LWM2M_Server_XML]	
+  Permanent Document Reference:
+   * OMA-SUP-XML_LWM2M_Server-V1_1-20180710-A		
+  Description: 
+   * XML document for LightweightM2M Server Working file in LWM2M_XML directory:
+        * File: LWM2M_Server-v1_1.xml
+        * Path: http://www.openmobilealliance.org/tech/profiles
+
+OMNA Considerations
+The OMNA registry needs to add and maintain the following Objects:
+  * Object URN Identifier: urn:oma:lwm2m:oma:1:1.1
+  * Object Name: LwM2M Server
+  * Object Specification URL: OMA-TS-LightweightM2M-Core-V1-1-201800710-A	
+  * Description: It provides the data related to a LwM2M Server. A Bootstrap-Server has no such an Object Instance associated to it.
+
+---------------
+
+LIGHTWEIGHTM2M ACCESS CONTROL OBJECT (2)
+
+RELEASE VERSION OVERVIEW
+  Version 1.0 Functionality
+  Version 1.0.1 Functionality
+  Version 1.0.2 Functionality
+   *Updates to the metadata.
+
+DOCUMENT LISTING FOR SUP LightweightM2M Access Control Object V1.0.2
+Publication Considerations
+  Doc Reference   
+   * [LWM2M_Access_Control_XML]	
+  Permanent Document Reference:
+   * OMA-SUP-XML_LWM2M_Access_Control-V1_0_2-20180612-A		
+  Description: 
+   * XML document for LightweightM2M Access Control Working file in LWM2M_XML directory:
+        * File: LWM2M_Access_Control-v1_0_2.xml
+        * Path: http://www.openmobilealliance.org/tech/profiles
+
+OMNA Considerations
+The OMNA registry needs to add and maintain the following Objects:
+  * Object URN Identifier: urn:oma:lwm2m:oma:2
+  * Object Name: Access Control
+  * Object Specification URL: OMA-TS-LightweightM2M-Core-V1-1-20180612-C	
+  * Description:  It is used to check whether the LwM2M Server has access right for performing an operation.
+ 
+-------------------------
+
+LIGHTWEIGHTM2M DEVICE OBJECT (3)
+
+RELEASE VERSION OVERVIEW
+  Version 1.0 Functionality
+  Version 1.0.1 Functionality
+  Version 1.0.2 Functionality
+   * Update to metadata information
+
+DOCUMENT LISTING FOR SUP LightweightM2M Device Object V1.0.3
+Publication Considerations
+  Doc Reference   
+   * [LWM2M_Device_XML]	
+  Permanent Document Reference:
+   * OMA-SUP-XML_LWM2M_Device-V1_0_3-20180710-A		
+  Description: 
+   * XML document for LightweightM2M Device Working file in LWM2M_XML directory:
+        * File: LWM2M_Device-v1_0_3.xml
+        * Path: http://www.openmobilealliance.org/tech/profiles
+
+OMNA Considerations
+The OMNA registry needs to add and maintain the following Objects:
+  * Object URN Identifier: urn:oma:lwm2m:oma:3
+  * Object Name: Device
+  * Object Specification URL: OMA-TS-LightweightM2M-Core-V1-1-20180710-A	
+  * Description:  It provides a range of device related information which can be queried by the LwM2M Server, and a device reboot and 
+                  factory reset function.
+
+-------------------------
+
+LIGHTWEIGHTM2M CONNECTIVITY MONITORING OBJECT (4)
+
+RELEASE VERSION OVERVIEW
+  Version 1.0 Functionality
+  Version 1.0.1 Functionality
+  Version 1.0.2 Functionality
+   * Update to metadata information
+   * Update to:
+      * Resource ID (2) description
+      * Resource ID (3) description
+      * Editorial updates
+
+DOCUMENT LISTING FOR SUP LightweightM2M Connectivity Monitoring Object V1.1
+Publication Considerations
+  Doc Reference   
+   * [LWM2M_Connectivity_Monitoring_XML]	
+  Permanent Document Reference:
+   * OMA-SUP-XML_LWM2M_Connectivity_Monitoring-V1_1-20180710-A		
+  Description: 
+   * XML document for LightweightM2M Connectivity Monitoring Working file in LWM2M_XML directory:
+        * File: LWM2M_Connectivity_Monitoring-v1_1.xml
+        * Path: http://www.openmobilealliance.org/tech/profiles
+
+OMNA Considerations
+The OMNA registry needs to add and maintain the following Objects:
+  * Object URN Identifier: urn:oma:lwm2m:oma:4:1.1
+  * Object Name: LwM2M Connectivity Monitoring
+  * Object Specification URL: OMA-TS-LightweightM2M-Core-V1-1-20180710-A	
+  * Description:  It enables monitoring of parameters related to network connectivity. In this general connectivity Object, the 
+                  Resources are limited to the most general cases common to most network bearers. It is recommended to read the       
+                  description, which refers to relevant standard development organizations (e.g. 3GPP, IEEE). The goal of the 
+                  Connectivity Monitoring Object is to carry information reflecting the more up to date values of the current connection 
+                  for monitoring purposes. Resources such as Link Quality, Radio Signal Strength, Cell ID are retrieved during connected 
+                  mode at least for cellular networks.
+ 
+-------------------------
+
+LIGHTWEIGHTM2M Firmware Update OBJECT (5)
+
+RELEASE VERSION OVERVIEW
+  Version 1.0 Functionality
+  Version 1.0.1 Functionality
+  Version 1.0.2 Functionality
+   * Editorial and metadata updates.
+
+DOCUMENT LISTING FOR SUP LightweightM2M Firmware Update Object V1.0.2
+Publication Considerations
+  Doc Reference   
+   * [LWM2M_Firmware_Update_XML]	
+  Permanent Document Reference:
+   * OMA-SUP-XML_LWM2M_Firmware_Update-V1_0_2-20180612-A		
+  Description: 
+   * XML document for LightweightM2M Firmware Update Working file in LWM2M_XML directory:
+        * File: LWM2M_Firmware_Update-v1_0_2.xml
+        * Path: http://www.openmobilealliance.org/tech/profiles
+
+OMNA Considerations
+The OMNA registry needs to add and maintain the following Objects:
+  * Object URN Identifier: urn:oma:lwm2m:oma:5
+  * Object Name: Firmware Update
+  * Object Specification URL: OMA-TS-LightweightM2M-Core-V1-1-20180612-C	
+  * Description:  It enables management of firmware which is to be updated. This Object includes installing a firmware package, updating 
+                  firmware, and performing actions after updating firmware
+                  
+---------------
+
+LIGHTWEIGHTM2M LOCATION OBJECT (6)
+
+RELEASE VERSION OVERVIEW
+  Version 1.0 Functionality
+  Version 1.0.1 Functionality
+   * Editorial and metadata updates.
+
+DOCUMENT LISTING FOR SUP LightweightM2M Location Object V1.0.1
+Publication Considerations
+  Doc Reference   
+   * [LWM2M_Location_XML]	
+  Permanent Document Reference:
+   * OMA-SUP-XML_LWM2M_Location-V1_0_1-20180612-A		
+  Description: 
+   * XML document for LightweightM2M Location Working file in LWM2M_XML directory:
+        * File: LWM2M_Location-v1_0_1.xml
+        * Path: http://www.openmobilealliance.org/tech/profiles
+
+OMNA Considerations
+The OMNA registry needs to add and maintain the following Objects:
+  * Object URN Identifier: urn:oma:lwm2m:oma:6
+  * Object Name: Location
+  * Object Specification URL: OMA-TS-LightweightM2M-Core-V1-1-20180612-C	
+  * Description:   It provides a range of device related information which can be queried by the LwM2M Server, and a device reboot and  
+                   factory reset function.
+ 
+-------------------------
+
+LIGHTWEIGHTM2M CONNECTIVITY STATISTICS OBJECT (7)
+
+RELEASE VERSION OVERVIEW
+  Version 1.0 Functionality
+  Version 1.0.1 Functionality
+  Version 1.0.2 Functionality
+   * Metadata updates.
+
+DOCUMENT LISTING FOR SUP LightweightM2M Connectivity Statistics Object V1.0.3
+Publication Considerations
+  Doc Reference   
+   * [LWM2M_Connectivity_Statistics_XML]	
+  Permanent Document Reference:
+   * OMA-SUP-XML_LWM2M_Connectivity_Statistics-V1_0_3-20180710-A		
+  Description: 
+   * XML document for LightweightM2M Connectivity Statistics Working file in LWM2M_XML directory:
+        * File: LWM2M_Connectivity_Statistics-v1_0_3.xml
+        * Path: http://www.openmobilealliance.org/tech/profiles
+
+OMNA Considerations
+The OMNA registry needs to add and maintain the following Objects:
+  * Object URN Identifier: urn:oma:lwm2m:oma:7
+  * Object Name: Connectivity Statistics
+  * Object Specification URL: OMA-TS-LightweightM2M-Core-V1-1-20180710-A	
+  * Description:  It enables client to collect statistical information and enables the LwM2M Server to retrieve these 
+                  information, set the collection duration and reset the statistical parameters.
+
+------------------------
+
+
+LIGHTWEIGHTM2M OSCORE OBJECT (21)
+
+RELEASE VERSION OVERVIEW
+  Version 1.0 Functionality
+   * First version of OSCORE object.
+
+DOCUMENT LISTING FOR SUP LightweightM2M OSCORE Object V1.0
+Publication Considerations
+  Doc Reference   
+   * [LWM2M_OSCORE_XML]	
+  Permanent Document Reference:
+   * OMA-SUP-XML_LWM2M_OSCORE-V1_0-20180710-A	
+  Description: 
+   * XML document for LightweightM2M OSCORE Working file in LWM2M_XML directory:
+        * File: LWM2M_OSCORE-v1_0.xml
+        * Path: http://www.openmobilealliance.org/tech/profiles
+
+OMNA Considerations
+The OMNA registry needs to add and maintain the following Objects:
+  * Object URN Identifier: urn:oma:lwm2m:oma:21
+  * Object Name: OSCORE
+  * Object Specification URL: OMA-TS-LightweightM2M-Core-V1-1-20180710-A	
+  * Description: It provides the keying material and related information of a LwM2M Client appropriate to access a specified
+                 LwM2M Server using OSCORE.
+-------------------------
